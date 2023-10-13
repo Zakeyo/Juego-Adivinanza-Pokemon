@@ -1,0 +1,75 @@
+body{
+    background: linear-gradient(0.25turn, #77ff92, #4dc9e6)!important;
+    color: #F0F7d4;
+    margin: 0;
+    font-family: "PixelFont", sans-serif;
+}
+
+main {
+    max-width: 62.5rem;
+    margin: 6.25rem auto 3.125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+}
+
+.seccion1, .seccion2{
+    background-color: crimson;
+    background-size: cover;
+    border: 0.25rem solid #462fe0;
+    padding: 2.5rem;
+    border-radius: 0.625rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1.25rem;
+}
+
+button{
+    background: #77ff92;
+    height: 6.25rem;
+    width: 6.25rem;
+    font-size: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0.625rem #ffffff;
+    transform: scale(1.1);
+}
+
+.estadisticas{
+    border: 0.0625rem solid #ffffff;
+    height: 6.5625rem;
+    border-radius: 0.3125rem;
+    padding: 0.625rem 1.875rem;
+    box-sizing: border-box;
+}
+
+img{
+    width: 80%;
+}
+
+.pokeball img {
+    display: block;
+}
+
+.pokeball img[src="./assets/img/pokeball.png"] {
+    display: inline;
+}
+
+.pokeball img[src^="./assets/img/"] {
+    display: none;
+}
+
+@media screen and (max-width: 53.125rem) {
+    main {
+        grid-template-columns: 1fr;
+    }
+}
